@@ -34,12 +34,12 @@ gitflow
 gitFlow 日常工作流程图如下
 gitflow-branch
 下面介绍一下使用gitflow 工作流的常规操作。
+
 将设我们开发一个新的feature-1
 操作如下：
 ```
 git checkout develop #切换到develop分支，保证最新。
-git checkout -b feature-1 #新建feature-1分支，并切换到该分支
-做一堆修改，然后加入暂存区
+git checkout -b feature-1 #新建feature-1分支，并切换到该分支做一堆修改，然后加入暂存区
 ```
 ```
 git commit -m "compelete feature-1" #一次commit操作
