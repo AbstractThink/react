@@ -12,17 +12,17 @@
 
 [React Hooks工程实践总结](https://juejin.cn/post/6844904009220931598#heading-5)
 
-记一次常规的gitflow工作流
- 发表于 2018-04-19 |  分类于 Git |  阅读次数： 373
- 本文字数： 1.5k |  阅读时长 ≈ 3 分钟
 先简单说一下常见的git 分支管理策略
 
 集中式工作流：类似于SVN管理方式，只有一个master分支，每个人将自己的代码提交到master上。
+
 feature工作流：有一个主分支默认为master分支。每个人开发的时候基于master分支新建feature分支，然后提交到中央仓库，供大家code-review，通过之后merge进master分支
+
 gitflow工作流：长期存在两个分支，一个master分支，一个develop分支，develop分支为日常开发分支，所有功能开发都基于develop分支，测试也基于develop，测试通过之后合并到master分支。
+
 forking 工作流：这个工作流和其他工作流有本质不同，其他工作流都是有一个服务端仓库，forking工作流允许每个开发者有一个自己的服务端仓库。每个开发者可以将修改push到自己的服务端仓库，然后发起一个pull request 项目拥有者将修改更新到本地，测试通过之后，合并到自己本地的master分支，然后推送到公共仓库。
-以上四种工作方式除了第一种不能使用pull request其他都可以。
-pull request 就是提交代码之后发起给团队其他人发起code review请求。
+
+以上四种工作方式除了第一种不能使用pull request其他都可以。pull request 就是提交代码之后发起给团队其他人发起code review请求。
 
 下面来具体说说gitflow 工作流，也是很多团队都在使用的工作流。
 优点：就是打包上线，测试，开发，都很清晰。
